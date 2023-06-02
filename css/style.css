@@ -51,3 +51,132 @@ table {
 
 
 /* Write your css below here */
+
+header{
+	background-color: aqua;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	padding-left: 30px;
+	height: 100px;
+}
+
+
+
+.menu img{
+	margin-left: 100px;
+	height: 30px;
+}
+
+.nav{
+	font-size: large;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 50px;
+	display: none;
+	gap: 40px;}
+
+
+	main{
+		padding: 10px 20px;
+		min-height: 80vh;
+		display: grid;
+		grid-template-columns: repeat(1fr);
+		gap: 5px;
+	}
+
+	.game{
+		height: 150px;
+		width: 400px;
+		background-color: aqua;
+	}
+
+	.game img{
+		height: 90%;
+		width: 100%;
+	}
+
+	footer{
+		padding: 10px 20px;
+		gap: 10px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.footer{display: flex;
+		flex-direction: column;
+		background-color: green;
+
+	}
+
+	@media screen and (width >= 450px) {
+
+		.nav{
+			display: block;
+			justify-content: space-between;
+		}
+		.menu img{
+			display: none;
+		}
+
+		.game{
+			height: 150px;
+			width: 400px;
+			background-color: aqua;
+		}
+
+		main{
+			padding: 10px 60px;
+			grid-template-columns: 1fr 1fr;
+		
+		}
+
+		footer{
+			padding: 10px 60px;
+			gap: 10px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	
+		
+	}
+
+	@media screen and (width >= 900px) {
+
+		
+		
+
+		.game{
+			height: 200px;
+			width: 400px;
+			background-color: aqua;
+		}
+
+		main{
+			padding: 10px 60px;
+			grid-template-columns: 1fr 1fr 1fr ;
+		
+		}
+
+		footer{
+			padding: 10px 150px;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		}
+	
+		.game1{
+			height: 900px;
+			grid-row: 1/9;
+		}
+		
+		.game8{
+			height: 400px;
+			grid-row: 8/10;
+			/* grid-column: 8/10; */
+		}
+		
+	}
